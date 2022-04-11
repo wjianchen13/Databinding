@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!--
+        data标签的作用就是用来承载数据的，在data标签内部可以定义多个import标签和variable标签
+        注意：
+        layout标签内部只能有一个直接子view，多于1个就会报错，这个和ScrollView的要求是类似的。
+        记得把android和app的命名空间提升到layout标签中
+        layout标签的直接子标签不能是merge,否则报错。
+        fragment标签不支持dataBinding表达式，即在fragment标签中使用任何dataBinding表达式都会报错，即如下使用方式是错误的：
+    -->
+    <!--
+        用于定义生成的Binding类的规则。该属性不是必填属性，如果不填则采用默认的Binding类生成规则，如果要填，则会根据你填写内容的格式不同而有不同的生成规则。
+        1. 不定义class标签
+        在项目包名下(build/generated/source/apt/debug/包名/先生成databinding文件夹，然后在databinding文件夹中根据布局文件的名称生成Binding类。
+        根据布局文件的名称生成Binding类的规则为：以大写形式开始，删除下划线（_），并使用驼峰命名，然后后缀为“Binding”
+        2. <layout class="customClassName">
+        在databinding文件夹下生成customClassName
+        3. <layout class=".customClassName">
+        在databinding文件夹上一级（也就是.../包名/下）下生成customClassName
+        4.使用class属性:class=”cn.rqq.customClassName”
+        直接创建包名，原来的包名无效，在包名下生成customClassName
+    -->
+
+    <!--
+        variable标签是整个DataBinding机制的核心之一，是联系java代码和xml布局的纽带。variable标签定义在data标签内部，在data标签中，可以定义多个variable标签，
+        每个variable标签的name属性值不可相同，但type属性值可以相同。
+        type属性（必填）：
+
+        用于定义数据源所在路径，比如定义User实体类，要定义User的完整类名。具体见下面的示例。
+
+        name属性（必填）：
+
+        用于定义数据源的名称，在遵循基本命名规则的前提下，随意命名，但建议使用有意义的名称。具体见下面的示例。可以用name属性的值引用所属类的字段或方法.
+        定义String，Integer，Long等包装类型的数据【包括对应的基本类型】,对于包装类型的数据可以不用填写完整类名，因为DataBinding已经自动帮我们导入了java.lang的包了
+        定义实体数据，需要导入完整类名
+        <variable
+        name="user"
+        type="com.qiangxi.databindingdemo.entity.User"/>
+
+        定义其他类（非数据类），比如activity中定义的监听方法；需要导入完整类名
+
+        <variable
+            name="presenter"
+            type="com.qiangxi.databindingdemo.acitivity.XmlLabelActivity"/>
+
+            android:onClick="@{() -> presenter.onViewClick()}
+
+            import标签
+            import标签用于导入包，让我们可以直接使用某个类的静态方法或静态字段
+
+            alias属性（可选）：
+
+        当多个import标签的type属性值相同时，如果不做区分，在编译时会报错，因为默认情况下，它们之间的别名都是相同的，为了能正常编译运行，就需要使用alias属性做区分。
+
+          <data>
+
+                <import
+                    alias="textUtils01"
+                    type="android.text.TextUtils"/>
+
+                <import
+                    alias="textUtils02"
+                    type="android.text.TextUtils"/>
+            </data>
+    -->
+
+    <data >
+
+        <variable
+            name="name"
+            type="java.lang.String"/>
+
+        <variable
+            name="age"
+            type="int"/>
+
+        <variable
+            name="sex"
+            type="String"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="dataBinding基本使用11"/>
+
+    </LinearLayout>
+
+</layout>
