@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.databinding.viewmodel.ViewModelActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -44,4 +46,11 @@ public class MainActivity extends AppCompatActivity {
         it.setClass(this, DialogFragmentActivity.class);
         startActivity(it);
     }
+
+    public void onViewModel(View v) {
+        Intent it = new Intent();
+        it.setClass(this, ViewModelActivity.class);
+        startActivity(it);
+    }
+
 }

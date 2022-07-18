@@ -20,6 +20,7 @@
         <activity android:name=".VariableActivity" />
         <activity android:name=".TagActivity" />
         <activity android:name=".DialogFragmentActivity" />
+        <activity android:name=".viewmodel.ViewModelActivity" />
     </application>
 
 </manifest>

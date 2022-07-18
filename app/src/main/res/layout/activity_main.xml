@@ -51,5 +51,16 @@
             android:textAllCaps="false"
             android:onClick="onDialogFragment" />
 
+        <Button
+            android:id="@+id/btn_test5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ViewModel使用"
+            android:textAllCaps="false"
+            android:onClick="onViewModel" />
+
     </LinearLayout>
 </ScrollView>
