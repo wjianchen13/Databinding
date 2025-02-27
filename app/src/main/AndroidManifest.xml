@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +22,8 @@
         <activity android:name=".TagActivity" />
         <activity android:name=".DialogFragmentActivity" />
         <activity android:name=".viewmodel.ViewModelActivity" />
+        <activity android:name=".test1.TestActivity1" />
+
     </application>
 
 </manifest>

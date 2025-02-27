@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.databinding.test1.TestActivity1;
 import com.example.databinding.viewmodel.ViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent();
         it.setClass(this, ViewModelActivity.class);
         startActivity(it);
+    }
+
+    /**
+     * DataBinding源码阅读
+     * @param v
+     */
+    public void onTest1(View v) {
+        startActivity(new Intent(this, TestActivity1.class));
     }
 
 }

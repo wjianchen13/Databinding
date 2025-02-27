@@ -62,5 +62,16 @@
             android:textAllCaps="false"
             android:onClick="onViewModel" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="DataBinding源码阅读"
+            android:textAllCaps="false"
+            android:onClick="onTest1" />
+
+
     </LinearLayout>
 </ScrollView>
