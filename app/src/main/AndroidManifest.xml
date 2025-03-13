@@ -29,7 +29,12 @@
         <activity android:name=".test2.test3.TestDatabindingActivity3" />
         <activity android:name=".test2.test4.TestDatabindingActivity4" />
         <activity android:name=".test2.test5.TestDatabindingActivity5" />
-
+        <activity android:name=".test2.test6.TestDatabindingActivity6" />
+        <activity android:name=".test2.test7.TestDatabindingActivity7" />
+        <activity android:name=".test2.test8.TestDatabindingActivity8" />
+        <activity android:name=".test2.test9.TestDatabindingActivity9" />
+        <activity android:name=".test2.test10.TestDatabindingActivity10" />
+        <activity android:name=".test2.test11.TestDatabindingActivity11" />
 
     </application>
 

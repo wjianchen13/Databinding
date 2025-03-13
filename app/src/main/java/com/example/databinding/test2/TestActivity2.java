@@ -8,13 +8,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.databinding.R;
 import com.example.databinding.test2.test1.TestDatabindingActivity1;
+import com.example.databinding.test2.test10.TestDatabindingActivity10;
+import com.example.databinding.test2.test11.TestDatabindingActivity11;
 import com.example.databinding.test2.test2.TestDatabindingActivity2;
 import com.example.databinding.test2.test3.TestDatabindingActivity3;
 import com.example.databinding.test2.test4.TestDatabindingActivity4;
 import com.example.databinding.test2.test5.TestDatabindingActivity5;
+import com.example.databinding.test2.test6.TestDatabindingActivity6;
+import com.example.databinding.test2.test7.TestDatabindingActivity7;
+import com.example.databinding.test2.test8.TestDatabindingActivity8;
+import com.example.databinding.test2.test9.TestDatabindingActivity9;
 
 /**
  * DataBinding入门
+ * https://www.jianshu.com/p/dd247d6a562d#2-viewstub%E5%92%8Cinclude
  */
 public class TestActivity2 extends AppCompatActivity {
 
@@ -59,6 +66,50 @@ public class TestActivity2 extends AppCompatActivity {
     public void onTest5(View v) {
         startActivity(new Intent(this, TestDatabindingActivity5.class));
     }
+
+    /**
+     * ViewStub
+     */
+    public void onTest6(View v) {
+        startActivity(new Intent(this, TestDatabindingActivity6.class));
+    }
+
+    /**
+     * include
+     */
+    public void onTest7(View v) {
+        startActivity(new Intent(this, TestDatabindingActivity7.class));
+    }
+
+    /**
+     * BindingAdapter
+     */
+    public void onTest8(View v) {
+        startActivity(new Intent(this, TestDatabindingActivity8.class));
+    }
+
+    /**
+     * BindingConversion
+     */
+    public void onTest9(View v) {
+        startActivity(new Intent(this, TestDatabindingActivity9.class));
+    }
+
+    /**
+     * DataBindingComponent
+     */
+    public void onTest10(View v) {
+        startActivity(new Intent(this, TestDatabindingActivity10.class));
+    }
+
+    /**
+     * RecyclerView使用
+     */
+    public void onTest11(View v) {
+        startActivity(new Intent(this, TestDatabindingActivity11.class));
+    }
+
+
 
 
 }
