@@ -23,6 +23,13 @@
         <activity android:name=".DialogFragmentActivity" />
         <activity android:name=".viewmodel.ViewModelActivity" />
         <activity android:name=".test1.TestActivity1" />
+        <activity android:name=".test2.TestActivity2" />
+        <activity android:name=".test2.test1.TestDatabindingActivity1" />
+        <activity android:name=".test2.test2.TestDatabindingActivity2" />
+        <activity android:name=".test2.test3.TestDatabindingActivity3" />
+        <activity android:name=".test2.test4.TestDatabindingActivity4" />
+        <activity android:name=".test2.test5.TestDatabindingActivity5" />
+
 
     </application>
 

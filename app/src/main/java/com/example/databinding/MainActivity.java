@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.databinding.test1.TestActivity1;
+import com.example.databinding.test2.TestActivity2;
 import com.example.databinding.viewmodel.ViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,5 +62,14 @@ public class MainActivity extends AppCompatActivity {
     public void onTest1(View v) {
         startActivity(new Intent(this, TestActivity1.class));
     }
+
+    /**
+     * DataBinding 入门
+     * @param v
+     */
+    public void onTest2(View v) {
+        startActivity(new Intent(this, TestActivity2.class));
+    }
+
 
 }

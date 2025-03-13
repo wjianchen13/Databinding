@@ -7,16 +7,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DataBinding入门" />
+
         <Button
             android:id="@+id/btn_test1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:padding="10dp"
-            android:text="基础使用"
+            android:text="单向绑定"
             android:textAllCaps="false"
-            android:onClick="onBase" />
+            android:onClick="onTest1" />
 
         <Button
             android:id="@+id/btn_test2"
@@ -25,9 +32,9 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:padding="10dp"
-            android:text="变量事件"
+            android:text="双向绑定,继承BaseObservable方式"
             android:textAllCaps="false"
-            android:onClick="onVariable" />
+            android:onClick="onTest2" />
 
         <Button
             android:id="@+id/btn_test3"
@@ -36,9 +43,9 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:padding="10dp"
-            android:text="标签使用"
+            android:text="双向绑定,使用ObservableField"
             android:textAllCaps="false"
-            android:onClick="onTag" />
+            android:onClick="onTest3" />
 
         <Button
             android:id="@+id/btn_test4"
@@ -47,9 +54,9 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:padding="10dp"
-            android:text="DialogFragment使用"
+            android:text="事件处理"
             android:textAllCaps="false"
-            android:onClick="onDialogFragment" />
+            android:onClick="onTest4" />
 
         <Button
             android:id="@+id/btn_test5"
@@ -58,9 +65,9 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:padding="10dp"
-            android:text="ViewModel使用"
+            android:text="数据监听方法"
             android:textAllCaps="false"
-            android:onClick="onViewModel" />
+            android:onClick="onTest5" />
 
         <Button
             android:layout_width="match_parent"
@@ -70,17 +77,8 @@
             android:padding="10dp"
             android:text="DataBinding源码阅读"
             android:textAllCaps="false"
-            android:onClick="onTest1" />
+            android:onClick="onTest6" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="DataBinding 入门"
-            android:textAllCaps="false"
-            android:onClick="onTest2" />
 
     </LinearLayout>
 </ScrollView>
